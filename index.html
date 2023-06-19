@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verduleria online</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./imgs/Logo-Verduleria.jpg" type="image/x-icon">
+
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+
+<body>
+
+    <header class="header">
+        <nav class="navbar navbar-expand-md menu">
+            <div class="container-fluid">
+                <img class="logo" src="./imgs/logoVerduleria.jpg" alt="Verduleria online"/>
+                <a href="./index.html"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="menu__item navbar navbar-expand-md navbar-nav">
+                        <li>
+                            <button type="button" class="btn btn-primary btn-lg btn-menu active">
+                                <a href="./index.html">Inicio</a>
+                            </button>
+                        </li>
+                        <li>
+                            <button type="button" class="btn btn-primary btn-lg btn-menu">
+                                <a href="./index.html">Productos</a>
+                            </button>
+                        </li>
+                        <li>
+                            <button type="button" class="btn btn-primary btn-lg btn-menu">
+                                <a href="./index.html">Carrito</a> 
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <div>
+            <h1 class="tituloProductos">Lista de Productos</h1>
+        </div>
+
+        <div class="productos" id="listaProductos"></div>
+
+        <div>
+            <h2 class="tituloCarrito">Carrito de Compras</h2>
+        </div>
+
+        <div class="contenedorCarrito" id="listaCarrito"></div>
+        <p class="precioTotal">Precio Total: $ <span id="precioTotal">0</span></p>
+        <button class="vaciarCarrito" id="vaciarCarrito">Vaciar carrito</button>
+
+    </main>
+
+    <footer class="footer">
+        <p>Todos los derechos reservados - 2023</p>
+    </footer>
+
+    <script src="./js/Entregafinal.js"></script>
+</body>
+
+</html>
